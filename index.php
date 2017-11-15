@@ -2,10 +2,15 @@
 
 <h1>Pages 101</h1>
 
-<?php require('classes/page.php') ?>
+<?php echo '<p>' . '<a href="news-list.php">News Articles</a>' . '</p>';
 
-<?php include('html/foot.php'); ?>
+echo '<p>' . '<a href="contact.php">Contact</a>' . '</p>';
 
+echo '<p>' . '<a href="about.php">About</a>' . '</p>';
+
+require('classes/page.php');
+
+include('html/foot.php'); ?>
 
 
 Page class - set title and content <br><br>
