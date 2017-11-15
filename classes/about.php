@@ -4,15 +4,16 @@ require ('pages.php');
 
 class About extends Pages
 {
-    protected $date;
+    protected $work;
+    protected $title = 'About Page';
 
-    public function getDate()
+    public function getWork()
     {
-        return $this->date;
+        return $this->work;
     }
 
-    public function setDate($date)
+    public function setWork($work)
     {
-        $this->date = $date;
+        $this->work = $work;
     }
 }

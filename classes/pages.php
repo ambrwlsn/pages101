@@ -7,12 +7,12 @@ class Pages
 
     public function getTitle()
     {
-        return $this->title;
+        return $this->title . '.';
     }
 
-    public function setTitle($homepage)
+    public function setTitle($title)
     {
-        $this->title = $homepage;
+        $this->title = $title;
     }
 
     public function getContent()
