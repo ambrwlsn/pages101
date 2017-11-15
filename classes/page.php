@@ -5,11 +5,6 @@ class Page
     protected $title;
     protected $content;
 
-    public function renderPage()
-    {
-
-    }
-
     public function getTitle()
     {
         return '<span style="text-decoration: underline;">' .  $this->title . '</span>';
