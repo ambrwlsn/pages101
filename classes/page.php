@@ -1,13 +1,13 @@
 <?php
 
-class Pages
+class Page
 {
     protected $title;
     protected $content;
 
     public function getTitle()
     {
-        return $this->title . '.';
+        return '<span style="text-decoration: underline;">' .  $this->title . '</span>';
     }
 
     public function setTitle($title)

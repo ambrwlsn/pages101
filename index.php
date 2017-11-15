@@ -2,7 +2,7 @@
 
 <h1>Pages 101</h1>
 
-<?php require ('classes/pages.php') ?>
+<?php require('classes/page.php') ?>
 
 <?php include('html/foot.php'); ?>
 

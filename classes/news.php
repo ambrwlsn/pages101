@@ -1,9 +1,9 @@
 <?php
 
 //how could I do something other than write require here? how can it be auto-included in the page?
-require ('pages.php');
+require ('page.php');
 
-class News extends Pages
+class News extends Page
 {
     //why a protected property here?!
     //explain difference between private, public, protected

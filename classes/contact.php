@@ -1,6 +1,6 @@
 <?php
 
-class Contact
+class Contact extends Page
 {
 
 }
