@@ -14,5 +14,5 @@ $page3 = new News();
 $page3->setTitle('3');
 $page3->setDate('Friday 17th November 2017');
 
-
+//@todo convert to data source class after sponsors
 $newsArticles = array($page, $page2, $page3);

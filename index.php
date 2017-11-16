@@ -13,15 +13,4 @@ echo $link->navigation();
 
 include('html/foot.php');
 
-?>
-
-
-<!--Page class - set title and content <br><br>-->
-<!---->
-<!--Imagine you want different types of pages like news, homepage, contact page, about page etc. //think about what is common to all of these e.g. title, content could be common to all of them (should be protected - so need methods to set and get them)<br><br>-->
-<!---->
-<!--Specific to news might be the date<br><br>-->
-<!--Specific to contact page - contact form, map<br><br>-->
-<!--Specific to … … … etc.<br><br>-->
-<!---->
-<!--Should be a method in the class (e.g. render class) that renders HTML content that contains content common to all pages - this function should spit out the html itself-->
+//use a templating engine for all of this?

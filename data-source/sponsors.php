@@ -1,5 +1,10 @@
 <?php
 
+class Datasource_Sponsors
+{
+
+    protected $sponsor;
+
 $sponsor = new Sponsor();
 //$sponsor->setTitle('Awesome company 1');
 $sponsor->setSponsor('New and Upcoming Startup');
@@ -14,3 +19,8 @@ $sponsor3->setSponsor('Super Duper Cool Best Company Ever');
 
 
 $sponsorList = array($sponsor, $sponsor2, $sponsor3);
+
+}
+
+//@todo convert this into a class Datasource_Sponsors
+//create a method inside class to return the array of sponsors getSponsors()

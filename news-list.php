@@ -2,6 +2,7 @@
 
 require ('classes/news.php');
 require ('classes/sponsor.php');
+require ('classes/link.php');
 require ('data-source/articles.php');
 require ('data-source/sponsors.php');
 
@@ -14,13 +15,14 @@ foreach ($newsArticles as $article) {
 }
 
 foreach ($sponsorList as $sponsor) {
-//    echo 'Title: ' . $sponsor->getTitle() . '<br/>';
     echo '<p>';
     echo 'Sponsor: ' . $sponsor->getSponsor() . '<br/>';
     echo '</p>';
     echo '<hr>';
 }
 
+$link = new Link();
+echo $link->homepageLink();
 
 
 
