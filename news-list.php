@@ -22,8 +22,9 @@ foreach ($sponsors as $sponsor) {
     echo '<p>'.$sponsor->sponsorFormat() . '</p>';
 }
 
-$link = new Link();
-echo $link->navigation();
+include ('html/nav.php');
+
+
 
 
 

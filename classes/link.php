@@ -19,6 +19,11 @@ class Link
         $this->link = $link;
     }
 
+    public function addLink($linkUrl, $linkText)
+    {
+        //add this to $this->links
+    }
+
     //@todo fill in array with navigation information
     protected $links = array(
         "news-list.php" => "News Articles",
@@ -26,13 +31,17 @@ class Link
         "about.php" => "About"
     );
 
-
-    public function navigation($navigation)
+    public function getLinks()
     {
-        foreach ($this->links as $key => $value) {
-            echo $navigation;
-        }
+        return $this->links;
     }
+
+//    public function navigation()
+//    {
+//        foreach ($this->links as $key => $value) {
+//
+//        }
+//    }
 
     //@todo change this to be not using echo
     //@todo how can we get this to use the same template as the function above
