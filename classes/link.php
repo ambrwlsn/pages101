@@ -1,11 +1,23 @@
 <?php
-
-include ('viewlogic.php');
 $page='home';
 
+require_once (__DIR__ . '/../html/body.php');
+
 //@todo how do we set the active link?
-class Link extends View_Logic
+class Link
 {
+
+    protected $link;
+
+    public function getLink()
+    {
+        return $this->link;
+    }
+
+    public function setLink($link)
+    {
+        $this->link = $link;
+    }
 
     //@todo fill in array with navigation information
     protected $links = array(
@@ -15,10 +27,10 @@ class Link extends View_Logic
     );
 
 
-    public function navigation()
+    public function navigation($navigation)
     {
         foreach ($this->links as $key => $value) {
-            echo '<p>' . '<a href=' . $key . '>' . $value . '</a>' . '</p>';
+            echo $navigation;
         }
     }
 
