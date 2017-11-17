@@ -14,16 +14,16 @@ foreach ($newsArticles as $article) {
     echo '<hr>';
 }
 
-foreach ($sponsorList as $sponsor) {
-    echo '<p>';
-    echo 'Sponsor: ' . $sponsor->getSponsor() . '<br/>';
-    echo '</p>';
-    echo '<hr>';
+$sponsorsSource=new Datasource_Sponsor();
+//$sponsorsSource->addSponsor('The Unit');
+$sponsors = $sponsorsSource->getSponsors();
+
+foreach ($sponsors as $sponsor) {
+    echo '<p>'.$sponsor->sponsorFormat() . '</p>';
 }
 
 $link = new Link();
-echo $link->homepageLink();
-
+echo $link->navigation();
 
 
 

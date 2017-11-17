@@ -1,6 +1,6 @@
 <?php
 
-//require ('page.php');
+//require ('page.php'); --> why don't I need this?
 
 class Sponsor extends Page
 {
@@ -11,10 +11,24 @@ class Sponsor extends Page
         return $this->sponsorList;
     }
 
-    //this function allows the date from the News class to be altered elsewhere
     public function setSponsor($sponsorList)
     {
         $this->sponsorList = $sponsorList;
+    }
+
+    public function getSponsorTitle()
+    {
+        return $this->title;
+    }
+
+    public function setSponsorTitle($title)
+    {
+        $this->title = $title;
+    }
+
+    public function sponsorFormat()
+    {
+        return 'Sponsor - ' . $this->getSponsorTitle();
     }
 
 }

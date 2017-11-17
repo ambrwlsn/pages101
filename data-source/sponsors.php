@@ -1,26 +1,42 @@
 <?php
 
-class Datasource_Sponsors
+class Datasource_Sponsor
 {
 
-    protected $sponsor;
+    //is this the same as protected $sponsorNames = array();?
+    protected $sponsorNames = [
+        'New and Upcoming Startup',
+        'Average Company Ltd.',
+        'Super Duper Cool Best Company Ever',
+        'Marks amazing business'
+    ];
 
-$sponsor = new Sponsor();
-//$sponsor->setTitle('Awesome company 1');
-$sponsor->setSponsor('New and Upcoming Startup');
+    public function getSponsors()
+    {
 
-$sponsor2 = new Sponsor();
-//$sponsor2->setTitle('Awesome company 1');
-$sponsor2->setSponsor('Average Company Ltd.');
+        $sponsorList = []; //means an array will always be returned, and not an error
+        foreach ($this->sponsorNames as $sponsorNamez) {
+            $sponso = new Sponsor();
+            $sponso->setTitle($sponsorNamez);
+            $sponsorList[] = $sponso;
+        }
 
-$sponsor3 = new Sponsor();
-//$sponsor3->setTitle('Awesome company 1');
-$sponsor3->setSponsor('Super Duper Cool Best Company Ever');
+        return $sponsorList;
+
+    }
+
+    public function addSponsor($string)
+    {
+        //@todo allow this function to take in a sponsor name and add it to the object array
+        //do I need THIS function???
+
+//        $array[] = $value;
+        $this->sponsorNames[] = $string;
 
 
-$sponsorList = array($sponsor, $sponsor2, $sponsor3);
+
+        //array_push($newItem);
+
+    }
 
 }
-
-//@todo convert this into a class Datasource_Sponsors
-//create a method inside class to return the array of sponsors getSponsors()
